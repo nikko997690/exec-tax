@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisory | Nexus Tax & Advisory Group</title>
+  <meta name="description" content="Strategic financial advisory services. Business consulting, wealth management, and growth strategies for enterprises and individuals.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#001233', blue: '#0466C8', gray: '#8D99AE' },
+          fontFamily: {
+            display: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            mono: ['SF Mono', 'Monaco', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="page-transition"></div>
+  
+  <nav class="nav scrolled">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.png" alt="Nexus Tax & Advisory Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="tax-consulting.html" class="nav-link">Tax Consulting</a></li>
+      <li><a href="advisory.html" class="nav-link active">Advisory</a></li>
+      <li><a href="resolution.html" class="nav-link">Resolution</a></li>
+      <li><a href="accounting-law.html" class="nav-link">Accounting & Law</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+  
+  <section class="page-hero">
+    <div id="page-hero-canvas" class="page-hero-canvas"></div>
+    <div class="page-hero-content">
+      <span class="hero-label">Advisory</span>
+      <h1 class="hero-title">Strategic<br>Guidance</h1>
+      <p class="hero-subtitle">Forward-looking advisory that transforms financial complexity into competitive advantage.</p>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <span class="section-label fade-up">Services</span>
+        <h2 class="section-title fade-up">Advisory<br>Capabilities</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-row fade-up">
+          <span class="service-num">01</span>
+          <div>
+            <h4>Business Strategy Consulting</h4>
+            <p>Operational optimization, growth strategy development, market entry planning, and performance improvement initiatives for businesses at every stage.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">02</span>
+          <div>
+            <h4>Wealth Management Advisory</h4>
+            <p>Comprehensive wealth planning including investment strategy, portfolio construction, risk management, and multi-generational wealth transfer.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">03</span>
+          <div>
+            <h4>M&A Advisory</h4>
+            <p>Due diligence support, transaction structuring, valuation analysis, and post-merger integration planning for acquisitions and divestitures.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">04</span>
+          <div>
+            <h4>Financial Planning & Analysis</h4>
+            <p>Budgeting, forecasting, financial modeling, cash flow optimization, and scenario planning to drive informed decision-making.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">05</span>
+          <div>
+            <h4>Risk Management</h4>
+            <p>Enterprise risk assessment, internal control evaluation, fraud prevention strategies, and regulatory compliance frameworks.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">06</span>
+          <div>
+            <h4>Family Office Services</h4>
+            <p>Dedicated support for family offices including governance structures, succession planning, philanthropy strategy, and consolidated reporting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section section-dark">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="section-label fade-up">Clientele</span>
+      <h2 class="section-title fade-up" style="font-size: clamp(1.8rem, 3.5vw, 3rem);">Trusted by Industry<br>Leaders</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div class="fade-up p-6 border border-white/10 rounded-lg text-center">
+          <div class="text-2xl font-display font-bold text-white mb-1">FNW</div>
+          <div class="font-mono text-xs text-gray">Family Offices</div>
+        </div>
+        <div class="fade-up p-6 border border-white/10 rounded-lg text-center">
+          <div class="text-2xl font-display font-bold text-white mb-1">PE</div>
+          <div class="font-mono text-xs text-gray">Private Equity</div>
+        </div>
+        <div class="fade-up p-6 border border-white/10 rounded-lg text-center">
+          <div class="text-2xl font-display font-bold text-white mb-1">ENT</div>
+          <div class="font-mono text-xs text-gray">Enterprises</div>
+        </div>
+        <div class="fade-up p-6 border border-white/10 rounded-lg text-center">
+          <div class="text-2xl font-display font-bold text-white mb-1">HNI</div>
+          <div class="font-mono text-xs text-gray">Individuals</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" style="text-align: center;">
+    <div class="max-w-3xl mx-auto">
+      <span class="section-label fade-up">Partner With Us</span>
+      <h2 class="section-title fade-up" style="font-size: clamp(2rem, 4vw, 3.5rem);">Strategic Clarity<br>Starts Here</h2>
+      <p class="fade-up" style="font-size: 1.05rem; margin: 2rem 0 3rem; color: var(--gray);">Engage our advisory team for a comprehensive assessment of your financial landscape.</p>
+      <a href="contact.html" class="hero-cta" style="opacity: 1; transform: none;">
+        <span>Request Advisory Session</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Nexus Tax & Advisory Group">
+        <p>An elite comprehensive financial services firm serving discerning clients nationwide.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="tax-consulting.html">Tax Consulting</a></li>
+          <li><a href="advisory.html">Advisory</a></li>
+          <li><a href="resolution.html">Resolution</a></li>
+          <li><a href="accounting-law.html">Accounting & Law</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+12025555000">+1 (202) 555-5000</a></li>
+          <li><a href="mailto:consult@nexustax.com">consult@nexustax.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nexus Tax & Advisory Group. All rights reserved.</p>
+      <p>This website does not constitute legal or tax advice.</p>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>

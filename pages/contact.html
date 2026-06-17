@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nexus Tax & Advisory Group</title>
+  <meta name="description" content="Contact Nexus Tax & Advisory Group for a confidential consultation. Schedule your appointment with our senior advisors.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#001233', blue: '#0466C8', gray: '#8D99AE' },
+          fontFamily: {
+            display: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            mono: ['SF Mono', 'Monaco', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="page-transition"></div>
+  
+  <nav class="nav scrolled">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.png" alt="Nexus Tax & Advisory Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="tax-consulting.html" class="nav-link">Tax Consulting</a></li>
+      <li><a href="advisory.html" class="nav-link">Advisory</a></li>
+      <li><a href="resolution.html" class="nav-link">Resolution</a></li>
+      <li><a href="accounting-law.html" class="nav-link">Accounting & Law</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+  
+  <section class="page-hero">
+    <div id="page-hero-canvas" class="page-hero-canvas"></div>
+    <div class="page-hero-content">
+      <span class="hero-label">Contact</span>
+      <h1 class="hero-title">Let's<br>Connect</h1>
+      <p class="hero-subtitle">Schedule a confidential consultation with our senior team.</p>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="contact-grid">
+      <div class="fade-up">
+        <span class="section-label">New Client Inquiry</span>
+        <h2 class="section-title" style="font-size: clamp(1.6rem, 2.5vw, 2.2rem);">Request a Confidential<br>Consultation</h2>
+        <p class="text-gray mt-4 mb-8">Complete the form below. A senior advisor will contact you within one business day.</p>
+        
+        <form id="contact-form">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john.smith@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(202) 555-0000">
+          </div>
+          <div class="form-group">
+            <label for="service">Service of Interest</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="tax-consulting">Tax Consulting</option>
+              <option value="advisory">Advisory</option>
+              <option value="resolution">Tax Resolution</option>
+              <option value="accounting">Accounting</option>
+              <option value="law">Corporate Law</option>
+              <option value="multiple">Multiple Services</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="entity">Entity Type</label>
+            <select id="entity" name="entity">
+              <option value="">Select entity type</option>
+              <option value="individual">Individual / HNWI</option>
+              <option value="family-office">Family Office</option>
+              <option value="llc">LLC / Partnership</option>
+              <option value="corporation">Corporation</option>
+              <option value="nonprofit">Non-Profit</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">How Can We Help?</label>
+            <textarea id="message" name="message" placeholder="Describe your situation and what you hope to achieve..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>Submit Inquiry</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+      
+      <div class="fade-up">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          
+          <div class="contact-detail">
+            <h5>Main Office</h5>
+            <p>1200 Connecticut Avenue NW<br>Suite 1000<br>Washington, DC 20036</p>
+          </div>
+          
+          <div class="contact-detail">
+            <h5>Phone</h5>
+            <p><a href="tel:+12025555000">+1 (202) 555-5000</a></p>
+          </div>
+          
+          <div class="contact-detail">
+            <h5>Email</h5>
+            <p><a href="mailto:consult@nexustax.com">consult@nexustax.com</a></p>
+          </div>
+          
+          <div class="contact-detail">
+            <h5>Hours of Operation</h5>
+            <p>Monday - Friday: 8:30 AM - 6:00 PM EST<br>Saturday: By appointment only</p>
+          </div>
+          
+          <div class="contact-detail">
+            <h5>Urgent Tax Matters</h5>
+            <p>For urgent tax resolution matters, please call our emergency line:<br><a href="tel:+12025555001" class="text-blue">+1 (202) 555-5001</a></p>
+          </div>
+        </div>
+        
+        <div class="mt-10 p-8 bg-navy rounded-lg text-white">
+          <h4 class="font-display font-bold text-lg mb-4">Privacy Guarantee</h4>
+          <p class="text-white/60 text-sm leading-relaxed mb-4">All consultations are strictly confidential. Your information is protected by attorney-client privilege where applicable and our rigorous internal privacy protocols.</p>
+          <p class="text-white/60 text-sm leading-relaxed">We never share client information with third parties without explicit consent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Nexus Tax & Advisory Group">
+        <p>An elite comprehensive financial services firm serving discerning clients nationwide.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="tax-consulting.html">Tax Consulting</a></li>
+          <li><a href="advisory.html">Advisory</a></li>
+          <li><a href="resolution.html">Resolution</a></li>
+          <li><a href="accounting-law.html">Accounting & Law</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+12025555000">+1 (202) 555-5000</a></li>
+          <li><a href="mailto:consult@nexustax.com">consult@nexustax.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nexus Tax & Advisory Group. All rights reserved.</p>
+      <p>This website does not constitute legal or tax advice.</p>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.btn-submit');
+      btn.innerHTML = '<span>Inquiry Submitted</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+      btn.style.background = '#0466C8';
+      setTimeout(() => {
+        btn.innerHTML = '<span>Submit Inquiry</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+        btn.style.background = '';
+        this.reset();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

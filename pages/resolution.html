@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Resolution | Nexus Tax & Advisory Group</title>
+  <meta name="description" content="Expert tax resolution services. IRS negotiations, audit defense, offer in compromise, penalty abatement, and lien relief.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#001233', blue: '#0466C8', gray: '#8D99AE' },
+          fontFamily: {
+            display: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            mono: ['SF Mono', 'Monaco', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="page-transition"></div>
+  
+  <nav class="nav scrolled">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.png" alt="Nexus Tax & Advisory Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="tax-consulting.html" class="nav-link">Tax Consulting</a></li>
+      <li><a href="advisory.html" class="nav-link">Advisory</a></li>
+      <li><a href="resolution.html" class="nav-link active">Resolution</a></li>
+      <li><a href="accounting-law.html" class="nav-link">Accounting & Law</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+  
+  <section class="page-hero">
+    <div id="page-hero-canvas" class="page-hero-canvas"></div>
+    <div class="page-hero-content">
+      <span class="hero-label">Tax Resolution</span>
+      <h1 class="hero-title">Resolve &<br>Rebuild</h1>
+      <p class="hero-subtitle">Expert negotiation and defense when facing tax disputes, audits, and collections.</p>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <span class="section-label fade-up">Services</span>
+        <h2 class="section-title fade-up">Tax Resolution<br>Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-row fade-up">
+          <span class="service-num">01</span>
+          <div>
+            <h4>IRS Audit Defense</h4>
+            <p>Comprehensive audit representation from initial notice through resolution. We handle correspondence audits, office audits, and field examinations with precision.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">02</span>
+          <div>
+            <h4>Offer in Compromise</h4>
+            <p>Strategic negotiation of tax debt settlements for less than the full amount owed. We prepare, submit, and negotiate OIC applications with optimal positioning.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">03</span>
+          <div>
+            <h4>Installment Agreements</h4>
+            <p>Negotiation of manageable payment plans including streamlined, partial pay, and complex installment agreements tailored to your financial capacity.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">04</span>
+          <div>
+            <h4>Penalty Abatement</h4>
+            <p>First-time penalty abatement, reasonable cause arguments, and systemic penalty relief requests to reduce or eliminate tax penalties and associated interest.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">05</span>
+          <div>
+            <h4>Lien & Levy Release</h4>
+            <p>Fast-track federal tax lien withdrawals, lien subordinations, levy releases, and Certificate of Release of Federal Tax Lien procurement.</p>
+          </div>
+        </div>
+        <div class="service-row fade-up">
+          <span class="service-num">06</span>
+          <div>
+            <h4>Currently Not Collectible</h4>
+            <p>Hardship status qualification and maintenance, temporary collection suspension, and strategic planning for eventual resolution of tax liabilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section section-dark">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-label fade-up">Our Process</span>
+        <h2 class="section-title fade-up" style="font-size: clamp(1.8rem, 3.5vw, 3rem);">How We Resolve<br>Tax Issues</h2>
+      </div>
+      <div class="space-y-6">
+        <div class="fade-up flex gap-6 items-start p-6 border border-white/10 rounded-lg">
+          <div class="font-mono text-blue text-sm flex-shrink-0">01</div>
+          <div>
+            <h4 class="text-white font-display font-bold mb-2">Case Assessment</h4>
+            <p class="text-sm">Comprehensive review of your tax transcripts, financial situation, and available resolution options.</p>
+          </div>
+        </div>
+        <div class="fade-up flex gap-6 items-start p-6 border border-white/10 rounded-lg">
+          <div class="font-mono text-blue text-sm flex-shrink-0">02</div>
+          <div>
+            <h4 class="text-white font-display font-bold mb-2">Strategy Development</h4>
+            <p class="text-sm">Customized resolution strategy based on your unique circumstances and IRS protocols.</p>
+          </div>
+        </div>
+        <div class="fade-up flex gap-6 items-start p-6 border border-white/10 rounded-lg">
+          <div class="font-mono text-blue text-sm flex-shrink-0">03</div>
+          <div>
+            <h4 class="text-white font-display font-bold mb-2">Negotiation & Resolution</h4>
+            <p class="text-sm">Direct engagement with IRS personnel to secure the most favorable resolution possible.</p>
+          </div>
+        </div>
+        <div class="fade-up flex gap-6 items-start p-6 border border-white/10 rounded-lg">
+          <div class="font-mono text-blue text-sm flex-shrink-0">04</div>
+          <div>
+            <h4 class="text-white font-display font-bold mb-2">Compliance & Prevention</h4>
+            <p class="text-sm">Post-resolution compliance planning to prevent future issues and maintain good standing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" style="text-align: center;">
+    <div class="max-w-3xl mx-auto">
+      <span class="section-label fade-up">Urgent Help</span>
+      <h2 class="section-title fade-up" style="font-size: clamp(2rem, 4vw, 3.5rem);">Facing a Tax<br>Problem?</h2>
+      <p class="fade-up" style="font-size: 1.05rem; margin: 2rem 0 3rem; color: var(--gray);">Time is critical in tax resolution. Contact us immediately for a confidential case evaluation.</p>
+      <a href="contact.html" class="hero-cta" style="opacity: 1; transform: none;">
+        <span>Get Immediate Help</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Nexus Tax & Advisory Group">
+        <p>An elite comprehensive financial services firm serving discerning clients nationwide.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="tax-consulting.html">Tax Consulting</a></li>
+          <li><a href="advisory.html">Advisory</a></li>
+          <li><a href="resolution.html">Resolution</a></li>
+          <li><a href="accounting-law.html">Accounting & Law</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+12025555000">+1 (202) 555-5000</a></li>
+          <li><a href="mailto:consult@nexustax.com">consult@nexustax.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nexus Tax & Advisory Group. All rights reserved.</p>
+      <p>This website does not constitute legal or tax advice.</p>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>

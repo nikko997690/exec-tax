@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Tax & Advisory Group | Precision in Every Detail</title>
+  <meta name="description" content="Elite tax consulting, advisory, resolution, accounting, and corporate law services. Navigate complexity. Secure your legacy.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#001233', blue: '#0466C8', gray: '#8D99AE' },
+          fontFamily: {
+            display: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            mono: ['SF Mono', 'Monaco', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="page-transition"></div>
+  
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Nexus Tax & Advisory Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="pages/tax-consulting.html" class="nav-link">Tax Consulting</a></li>
+      <li><a href="pages/advisory.html" class="nav-link">Advisory</a></li>
+      <li><a href="pages/resolution.html" class="nav-link">Resolution</a></li>
+      <li><a href="pages/accounting-law.html" class="nav-link">Accounting & Law</a></li>
+      <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  
+  <!-- Hero: The Nexus Overview -->
+  <section class="hero">
+    <div id="hero-canvas" class="hero-canvas"></div>
+    <div class="hero-content">
+      <span class="hero-label">Nexus Tax & Advisory Group</span>
+      <h1 class="hero-title">Precision in<br>Every Detail</h1>
+      <div class="hero-ticker">[ TAX &bull; ADVISORY &bull; RESOLUTION &bull; ACCOUNTING &bull; LAW ]</div>
+      <p class="hero-subtitle">An elite comprehensive financial services firm specializing in high-stakes tax strategy, corporate advisory, and legal protection for discerning clients.</p>
+      <a href="pages/contact.html" class="hero-cta">
+        <span>Initiate Consultation</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+  
+  <!-- Intro: The Nexus Philosophy -->
+  <section class="section intro">
+    <div class="intro-grid">
+      <div>
+        <span class="section-label fade-up">Our Philosophy</span>
+        <h2 class="intro-title fade-up">Navigating Complexity.<br>Securing Legacies.</h2>
+      </div>
+      <div class="intro-body fade-up">
+        <p>For over two decades, Nexus Tax & Advisory Group has served as the trusted financial architect for high-net-worth individuals, family offices, and enterprises navigating an increasingly complex regulatory landscape.</p>
+        <div class="intro-divider"></div>
+        <p>Our integrated approach combines deep expertise across tax consulting, strategic advisory, dispute resolution, accounting, and corporate law — delivering comprehensive solutions that protect and grow your wealth.</p>
+        <p>We don't just manage numbers. We engineer financial futures with the precision of a master craftsman and the strategic vision of a trusted partner.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stats -->
+  <section class="section section-dark" style="padding: 10vh 6vw;">
+    <div class="stats-grid">
+      <div class="fade-up">
+        <div class="stat-number" data-count="850" data-suffix="+">0+</div>
+        <div class="stat-label">Clients Served</div>
+      </div>
+      <div class="fade-up">
+        <div class="stat-number" data-count="2.4" data-suffix="B+">0B+</div>
+        <div class="stat-label">Assets Managed</div>
+      </div>
+      <div class="fade-up">
+        <div class="stat-number" data-count="22" data-suffix="+">0+</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="fade-up">
+        <div class="stat-number" data-count="98" data-suffix="%">0%</div>
+        <div class="stat-label">Client Retention</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Capabilities: Interactive Accordion -->
+  <section class="accordion-stage">
+    <div class="accordion-bg"></div>
+    <div class="accordion-title">TAX CONSULTING</div>
+    <div class="accordion-list">
+      <div class="accordion-item" data-image="images/accordion-tax.jpg" data-title="TAX CONSULTING">
+        Tax Consulting
+      </div>
+      <div class="accordion-item" data-image="images/accordion-advisory.jpg" data-title="ADVISORY">
+        Advisory
+      </div>
+      <div class="accordion-item" data-image="images/accordion-resolution.jpg" data-title="RESOLUTION">
+        Resolution
+      </div>
+      <div class="accordion-item" data-image="images/accordion-accounting.jpg" data-title="ACCOUNTING & LAW">
+        Accounting & Law
+      </div>
+    </div>
+  </section>
+  
+  <!-- Disciplines: Dimensional Text Stack -->
+  <div class="text-stack-container">
+    <div class="text-stack-sticky">
+      <div class="stack-block" style="z-index: 5;">TAX</div>
+      <div class="stack-block" style="z-index: 4;">ADVISORY</div>
+      <div class="stack-block" style="z-index: 3;">RESOLUTION</div>
+      <div class="stack-block" style="z-index: 2;">ACCOUNTING</div>
+      <div class="stack-block" style="z-index: 1;">LAW</div>
+    </div>
+  </div>
+  
+  <!-- CTA Section -->
+  <section class="section" style="text-align: center;">
+    <div class="max-w-3xl mx-auto">
+      <span class="section-label fade-up">Begin Today</span>
+      <h2 class="section-title fade-up" style="font-size: clamp(2.2rem, 5vw, 4.5rem);">Your Financial<br>Future Starts Here</h2>
+      <p class="fade-up" style="font-size: 1.1rem; margin: 2rem 0 3rem; color: var(--gray);">Schedule a confidential consultation with our senior advisors.</p>
+      <a href="pages/contact.html" class="hero-cta" style="opacity: 1; transform: none;">
+        <span>Schedule Consultation</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Nexus Tax & Advisory Group">
+        <p>An elite comprehensive financial services firm. Tax consulting, advisory, resolution, accounting, and corporate law.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="pages/tax-consulting.html">Tax Consulting</a></li>
+          <li><a href="pages/advisory.html">Advisory</a></li>
+          <li><a href="pages/resolution.html">Resolution</a></li>
+          <li><a href="pages/accounting-law.html">Accounting & Law</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/contact.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+12025555000">+1 (202) 555-5000</a></li>
+          <li><a href="mailto:consult@nexustax.com">consult@nexustax.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nexus Tax & Advisory Group. All rights reserved.</p>
+      <p>This website is for informational purposes only and does not constitute legal or tax advice.</p>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
