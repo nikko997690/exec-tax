@@ -1,8 +1,9 @@
 /* ============================================
-   Nexus Tax & Advisory Group - Main JavaScript
+   Nexus Executive Management Tax & Advisory Group - Main JavaScript
    ============================================ */
 
 gsap.registerPlugin(ScrollTrigger);
+document.documentElement.classList.add('js');
 
 // ============================================
 // Custom Cursor
@@ -55,12 +56,21 @@ class CustomCursor {
 class Navigation {
   constructor() {
     this.nav = document.querySelector('.nav');
+    this.toggle = document.querySelector('.menu-toggle');
     if (!this.nav) return;
     
     this.init();
   }
   
   init() {
+    if (this.toggle) {
+      this.toggle.addEventListener('click', () => {
+        this.nav.classList.toggle('open');
+      });
+    }
+
+    const closeMenu = () => this.nav.classList.remove('open');
+    
     window.addEventListener('scroll', () => {
       if (window.scrollY > 80) {
         this.nav.classList.add('scrolled');
@@ -75,6 +85,14 @@ class Navigation {
       const href = link.getAttribute('href');
       if (href === currentPage || (currentPage === '' && href === 'index.html') || (currentPage === 'index.html' && href === 'index.html')) {
         link.classList.add('active');
+      }
+
+      link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        closeMenu();
       }
     });
   }
